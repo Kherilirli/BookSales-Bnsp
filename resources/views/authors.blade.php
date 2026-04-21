@@ -10,6 +10,7 @@
     @foreach ($authors as $author)
         <ul>
             <li>Nama: {{ $author['name'] }}</li>
+            <li>Foto: {{ $author['photo'] }}</li>
             <li>Bio: {{ $author['bio'] }}</li>
         </ul>
     @endforeach
