@@ -15,6 +15,9 @@
             <li>Deskripsi: {{ $item['description'] }}</li>
             <li>Harga: {{ $item['price'] }}</li>
             <li>Stok: {{ $item['stock'] }}</li>
+            <li>Foto: {{ $item['cover_photo'] }}</li>
+            <li>Genre: {{ $item->genre->name }}</li>
+            <li>Author: {{ $item->author->name }}</li>
         </ul>
     @endforeach
 </body>
