@@ -15,13 +15,13 @@ class BookSeeder extends Seeder
     {
         //
         Book::create([
-            'title' => 'Pulang',
-            'description' => 'Petualangan seorang pemuda yang kembali ke desa kelahirannya.',
+            'title' => 'Spiderman',
+            'description' => 'Petualangan seorang pemuda yang memiliki kekuatan super karena tergigit seekor laba-laba.',
             'price' => 40000,
             'stock' => 15,
-            'cover_photo' => 'pulang.jpg',
+            'cover_photo' => 'spiderman.jpg',
             'genre_id' => 1,
-            'author_id' => 1
+            'author_id' => 3
         ]);
         Book::create([
             'title' => 'Laskar Pelangi',

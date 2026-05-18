@@ -99,4 +99,15 @@ class AuthController extends Controller
             ], 500);
         }
     }
+
+    public function refresh(){
+        $newToken = JWTAuth::refresh(JWTAuth::getToken());
+
+        return response()->json([
+            'success' => true,
+            'access_token' => $newToken,
+            'token_type' => 'bearer',
+            'expires_in' => config('jwt.ttl') * 60
+        ]);
+    }
 }
